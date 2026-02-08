@@ -30,6 +30,12 @@ body {
   100% { transform: translate(0,0) scale(1); }
 }
 
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
 /* ===== КОНТЕЙНЕР (СТЕКЛО) ===== */
 .container {
   width: 360px;
@@ -105,6 +111,8 @@ h1 {
 .card:hover {
   transform: scale(1.08) translateY(-4px);
   background: rgba(255,255,255,0.12);
+  box-shadow: 0 0 25px rgba(255,255,255,0.2),
+            0 0 50px rgba(138,43,226,0.6);
 }
 
 /* СВЕЧЕНИЕ */
@@ -125,6 +133,10 @@ h1 {
   .container {
     width: 92%;
     padding: 25px 20px;
+    box-shadow:
+  0 0 40px rgba(138,43,226,0.25),
+  inset 0 0 25px rgba(255,255,255,0.05);
+
   }
 
   .card {
